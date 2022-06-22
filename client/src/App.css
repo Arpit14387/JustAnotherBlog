@@ -1,0 +1,470 @@
+body{
+  background-color: #00B4CC !important;
+}
+
+@font-face {
+  font-family: custom;
+  src: url("./Hello.ttf");
+}
+
+.nav{
+  display: flex;
+}
+
+.search{
+  display: flex;
+  float: right;
+}
+
+
+
+
+.title{
+  margin: 0px;
+  padding: 0px;
+  top: 0%;
+  text-shadow: 5px 5px 20px black;
+  text-align: center;
+  font-size: 40px;
+  font-family: cursive;
+  align-items: center;
+  color:rgb(253, 68, 36);
+  
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.App{
+  /* background-image: linear-gradient(65deg, #3c9783 50%, rgb(243, 118, 118) 50%); */
+  background-color: rgb(255, 244, 244) ;
+  /* background: #2c3345; */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+  padding-top: 100px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+text-align: center;
+  background-color: wheat;
+  margin: 25% auto; /* 15% from the top and centered */
+  padding: 20px;
+  height: 200px;
+  border: 1px solid #888;
+  border-radius: 25px;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.editbox{
+  font-size: 15px;
+  text-align: center;
+  margin-top: 70px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.keycheck{
+ font-size: 20px;
+ margin: 20px;
+  background-color: #46cf8f;
+  border: 2px #46cf8f solid;
+  border-radius: 5px;
+}
+
+.temp{
+  margin-top: 30px;
+}
+
+.searchTerm {
+  margin-left: 30px;
+  width: 60%;
+  font-size: 15px;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+
+  color: white;
+  text-align: center;
+  color: white;
+  float: right;
+  width: 15px;
+  height: 20px;
+  background: #00B4CC;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+
+}
+
+
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+/* .Flex-container{
+  display: flex;
+  
+  flex-wrap: wrap;
+} */
+.img{
+  float: right;
+  height: 20%;
+  width: 45%;
+  border-radius: 30px;
+  
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* max-width: 300px; */
+  border: 5px rgb(39, 231, 125) solid;
+  border-radius: 10px;
+  margin: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  font-family: arial;
+  padding: 10px;
+  
+}
+
+.imgg{
+ width: 100%;
+ height: 60%; 
+ border-radius: 25px;
+ margin: 0px;
+ padding: 0px;
+}
+
+.top{
+  color: #00B4CC;
+}
+
+.container{
+  width: 100%;
+  text-align: center;
+}
+
+
+
+@media screen and (min-width:700px){
+  .card{
+      margin: 20px;
+      width: 40%;
+      text-align: justify;
+      float: left;
+  }
+ 
+}
+
+@media screen and (min-width:1000px){
+  .card{
+   
+    margin: 20px;
+    margin-left: 3vw;
+      width: 25%;
+      text-align: justify;
+      float: left;
+  }
+}
+
+
+
+.price {
+  margin: 0px;
+  background-color: #46cf8f;
+  color: black;
+  font-size: 22px;
+}
+.link{
+  text-decoration: none;
+}
+.card button{
+  text-decoration: none;
+ border: 0px;
+  margin: 0px;
+  color: rgb(8, 45, 255);
+  background-color: #00B4CC;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+.edit{
+  position: relative;
+  margin: 0px;
+  /* margin-top: 25px; */
+  padding: 0px;
+  
+  font-size: 20px;
+  
+  text-align: center;
+  color: #111;
+  background-color: rgb(253, 73, 42);
+  border: 2px solid rgb(253, 73, 42);
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+ .topic{
+   
+    font-size: auto;
+    text-align: center;
+  }
+
+  .post{
+    font-family: custom;
+    margin: 0px;
+    padding: 20px;
+    min-height: 100px;
+    background-color: #00B4CC;
+    font-size: 25px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
+  
+
+
+.button-55 {
+  float: left;
+  /* visibility: hidden; */
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  /* display: inline-block; */
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 15px;
+  outline: none;
+  padding: 0.8rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+.sparkle {
+  /* max-width: 10em; */
+  color: #441151;
+  margin: auto auto;
+}
+
+
+.u-hover--sparkle {
+  box-sizing: border-box;
+  position: relative;
+  padding: 0.15em;
+}
+.u-hover--sparkle::before, .u-hover--sparkle::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform-origin: center;
+}
+.u-hover--sparkle::before {
+  border-top: 0.15em solid #46cf8f;
+  border-bottom: 0.15em solid #46cf8f;
+  transform: scale3d(0, 1, 1);
+}
+.u-hover--sparkle::after {
+  border-left: 0.15em solid #46cf8f;
+  border-right: 0.15em solid #46cf8f;
+  transform: scale3d(1, 0, 1);
+}
+.u-hover--sparkle:hover::before, .u-hover--sparkle:hover::after {
+  transform: scale3d(1, 1, 1);
+  transition: transform 900ms;
+}
+
+.page{
+clear: both;
+  text-align: center;
+  font-size: larger;
+  height: 40px;
+  /* margin-left: 30%; */
+}
+
+.center {
+  position: absolute;
+  top:30%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+
+
+.tempp{
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #302a49;
+  width: 150px;
+  text-align: center;
+  color: #00B4CC;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  animation: move 10s infinite alternate-reverse;
+}
+
+
+@keyframes move {
+  0% {
+    transform: translatex(0);
+  }
+  50% {
+    transform: translatex(200px);
+  }
+}
+
+.cloudname{
+  color: rgb(15, 181, 231);
+  font-size: 30px;
+   font-weight: bolder;
+  text-decoration: none;
+}
+
+.add{
+  visibility: hidden;
+}
+
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
